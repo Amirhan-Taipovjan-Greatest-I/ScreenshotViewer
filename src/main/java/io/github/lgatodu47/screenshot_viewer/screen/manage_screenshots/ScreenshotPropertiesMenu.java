@@ -26,7 +26,6 @@ import org.apache.commons.lang3.tuple.Triple;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
-import javax.annotation.Nonnull;
 import javax.imageio.ImageIO;
 import java.awt.*;
 import java.awt.datatransfer.Clipboard;
@@ -352,7 +351,7 @@ class ScreenshotPropertiesMenu extends AbstractParentElement implements Drawable
             return DataFlavor.imageFlavor.equals(flavor);
         }
 
-        @Nonnull
+        @NotNull
         @Override
         public Object getTransferData(DataFlavor flavor) throws UnsupportedFlavorException {
             if(!isDataFlavorSupported(flavor)) {
